@@ -18,12 +18,14 @@
   <link href="../backend_assets/assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../backend_assets/assets/demo/demo.css" rel="stylesheet" />
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   @yield('style')
 </head>
 
 <body class="">
   <div class="wrapper ">
     {{-- Menu --}}
+
     @include('backend.menu')
 
     <div class="main-panel">
